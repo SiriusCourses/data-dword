@@ -37,26 +37,11 @@ Library
     base             >= 4.6 && < 5,
     hashable         >= 1.1,
     data-bword       >= 0.1,
-    template-haskell >= 2.8,
     ghc-prim
   Hs-Source-Dirs: src
   GHC-Options: -Wall
   Exposed-Modules:
     Data.DoubleWord
-    Data.DoubleWord.TH
   Other-Modules:
     Data.DoubleWord.Base
 
-Test-Suite tests
-  Default-Language: Haskell2010
-  Type: exitcode-stdio-1.0
-  Build-Depends:
-    base             >= 4.5 && < 5,
-    tasty            >= 0.8,
-    tasty-quickcheck >= 0.8,
-    data-dword
-  Hs-Source-Dirs: tests
-  GHC-Options: -Wall
-  Main-Is: Tests.hs
-  Other-Modules:
-    Types
